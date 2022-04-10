@@ -2,6 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="mystyle.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src = "./login.js"></script>
 
 <title>Motoring</title>
 </head>
@@ -9,41 +11,20 @@
   <button class="open-button" onclick="openForm()">Logowanie</button>
 
   <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container" id="login-form">
+    <form class="form-container" id="login-form">
       <h1>Logowanie</h1>
   
       <label for="Login"><b>Login</b></label>
-      <input type="text" placeholder="Wprowadz Login" name="Login" required>
+      <input type="text" placeholder="Wprowadz Login" id="Login" required>
   
       <label for="psw"><b>Hasło</b></label>
-      <input type="password" placeholder="Wprowadz Hasło" name="psw" required>
+      <input type="password" placeholder="Wprowadz Hasło" id="psw" required>
   
-      <button type="submit" class="btn" id="login-form-submit">Zaloguj</button>
+      <button type="submit" class="btn" id="login-form-submit" onclick="validate()">Zaloguj</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Anuluj</button>
       
-      <div id="login-error-msg-holder">
-        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-      </div>
-    
     </form>
-  </div>
-  
-  
-  <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  jQuery(window).load(function() {
-  sessionStorage.setItem('status','loggedIn') 
- });
-  </script>
-  
-  
-    
+  </div>  
     <div class="dropdown">
       <button class="dropbtn">Kamery</button>
       <div class="dropdown-content">
