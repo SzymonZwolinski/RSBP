@@ -159,3 +159,15 @@ body {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+    /* Links inside the navbar */
+    .navbar a {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        background-color: #4CAF50;
+    }
