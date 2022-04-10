@@ -1,3 +1,10 @@
+body {
+  background-image: url("./img/cctv.jpg");
+  background-color: #cccccc;
+}
+
+
+
 #main-holder {
   width: 50%;
   height: 70%;
