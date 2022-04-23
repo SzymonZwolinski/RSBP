@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Panel.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src = "./login.js"></script>
+
+<title>Panel Administratora</title>
+</head>
+<body>
+    <div class="dropdown">
+      <button class="dropbtn">Kamery</button>
+      <div class="dropdown-content">
+        <a href="kamera1.html">Kamera 1</a>
+        <a href="kamera2.html">Kamera 2</a>
+        <a href="kamera3.html">Kamera 3</a>
+      </div>
+    </div>
+    <div class="Menu">
+        <button type="button" class="Bttn" onclick="brakphp()">Dodaj Użytkownika</button>
+        <button type="button" class="Bttn" onclick="brakphp()">Edytuj Użytkownika</button>
+        <button type="button" class="Bttn" onclick="logout()">Wyloguj</button>
+    </div>
+    <script>
+        function logout()
+        {
+            event.preventDefault();
+            document.location.href ="index.html";
+        }
+        function brakphp()
+        {
+            alert("Brak polaczenia z baza danych");
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- https://www.w3schools.com/howto/howto_css_signup_form.asp-->

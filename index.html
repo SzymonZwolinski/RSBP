@@ -8,33 +8,21 @@
 <title>Motoring</title>
 </head>
 <body>
-  <button class="open-button" onclick="openForm()">Logowanie</button>
+  <button class="open-button" id="OpenButton1" onclick="openForm()">Logowanie</button>
 
-  <div class="form-popup" id="myForm">
-    <form class="form-container" id="login-form">
+  <div class="form-popup" id="myForm" >
+    <form class="form-container" id="login-form" method="GET">
       <h1>Logowanie</h1>
-  
       <label for="login"><b>Login</b></label>
       <input type="text" placeholder="Wprowadz Login" id="login" required>
   
       <label for="psw"><b>Hasło</b></label>
       <input type="password" placeholder="Wprowadz Hasło" id="psw" required>
-  
       <button type="submit" class="btn" id="login-form-submit" onclick="validate()">Zaloguj</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Anuluj</button>
       
     </form>
   </div>  
-    <div class="dropdown">
-      <button class="dropbtn">Kamery</button>
-      <div class="dropdown-content">
-        <a href="kamera1.html">Kamera 1</a>
-        <a href="kamera2.html">Kamera 2</a>
-        <a href="kamera3.html">Kamera 3</a>
-      </div>
-    </div>
-
-
 </body>
 </html>
 

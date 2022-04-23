@@ -5,8 +5,13 @@ function validate()
     var password=document.getElementById("psw").value;
     if(username=="admin"&& password=="admin")
     {
-        zalog();
-        return false;
+        event.preventDefault();
+        zalogA();
+    }
+    else if(username=="user"&&password=="user")
+    {
+        event.preventDefault();
+        zalogU();
     }
     else
     {
@@ -20,11 +25,11 @@ function openForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
-function zalog() {
-    jQuery(window).load(function() {
-        sessionStorage.setItem('status','loggedIn') 
-       });
-    alert("Zalogowano jako administrator");
-    for (let el of document.querySelectorAll('.appBanner')) el.style.visibility = 'hidden';
 
+function zalogA() {
+    document.location.href ="PanelAdministrator.html";
 }   
+function zalogU()
+{
+    document.location.href ="PanelUser.html";
+}
