@@ -19,10 +19,10 @@
     <div>
     <?php
         
-        $vids = glob("/home/student/*.h264",GLOB_BRACE);
+        $vids = glob("/var/www/html/RSBP/VIDEO/*.h264");
         foreach($vids as $v)
         {
-            echo '<a href=' . $v . ' download>"'. substr($v,14).'"   ' . '   </a>';
+            printf( '<a href='.substr($v,13).' download>"'.substr($v,25).'"</a>');
         }
         
         ?>
@@ -33,3 +33,4 @@
 </body>
 </html>
     
+

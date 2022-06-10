@@ -134,3 +134,25 @@ body {
         padding: 14px 16px;
         background-color: #4CAF50;
     }
+    
+    
+    
+    
+    /* (A) GALLERY - BIG SCREEN */
+#vid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+}
+#vid-gallery video {
+  width: 100%;
+  cursor: pointer;
+}
+ 
+/* (B) GALLERY - SMALL SCREEN */
+@media screen and (max-width: 1000px) {
+  #vid-gallery { grid-template-columns: repeat(2, auto); }
+}
+@media screen and (max-width: 600px) {
+  #vid-gallery { grid-template-columns: auto; }
+}
